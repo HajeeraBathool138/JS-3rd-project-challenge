@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3rd project challenge in JS</title>
     <style>
         body {
             display: flex;
             justify-content: center;
-            height: 90vh;
+            height: auto;
             align-items: center;
             background: antiquewhite;
+            flex-direction: column;
         }
 
         table {
@@ -19,6 +20,7 @@
             background: aquamarine;
             font-size: 24px;
             color: blue;
+            width: 320px;
         }
 
         th,
@@ -34,10 +36,34 @@
             border: 3px solid deepskyblue;
             background: aliceblue;
         }
+
+        p {
+            margin: 10px;
+        }
+
+        h4 {
+            margin: 10px;
+        }
+
+        h2 {
+            margin: 0px;
+        }
+
+        .main {
+            display: contents;
+        }
     </style>
 </head>
 
 <body>
+    <div class="main">
+        <h2>PROJECT - 3</h2>
+        <h4>Word Occurrence Counter</h4>
+        <p>Concepts Used: String Methods, Arrays, Objects</p>
+        <p>Create a tool that counts how many times each word appears in a given sentence and returns an object with the
+            word counts</p>
+        <p>given String : <b>The quick brown fox jumps over the lazy dog</b></p>
+    </div>
     <table id="table"></table>
     <script>
         let string = 'The quick brown fox jumps over the lazy dog';
